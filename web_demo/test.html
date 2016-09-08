@@ -1,0 +1,19 @@
+<html>
+    <head>
+	</head>
+	<body>
+	     hello world
+		 {{ a }}
+		 {% if a == 1 %}
+		     {{ a }} is 1
+		 {% elif a ==2 %}
+		     {{ a }} is 2
+		 {% else %}
+		     {{ a }} is not 1, and is not 2
+		 {% end %}
+
+		 {% for x in b %}
+		     element:{{ escape(x) }}
+		 {% end %}
+	</body>
+</html>

@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>
+			 this is a login page
+        </title>
+	</head>
+	<body>
+	     <form action='' method='post'>
+			 {% module xsrf_form_html() %}
+			 用户名：<input type='text' name='username' /></br>
+			 密码：<input type='password' name='password' /></br>
+			 <input type='submit' name='登陆' />
+		 </form>
+		 <img src="{{ static_url('pic.png') }}" />
+	</body>
+</html>

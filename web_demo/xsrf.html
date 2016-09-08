@@ -1,0 +1,12 @@
+<html>
+    <head>
+	    <title>this is a xsrf example</title>
+	</head>
+	<body>
+	     <form action='.' method='POST'>
+			 {% module xsrf_form_html() %}
+			 <input type='text' name='username' />
+			 <input type='submit' name='submit' />
+		 </form>
+	</body>
+</html>
