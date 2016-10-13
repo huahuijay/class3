@@ -1,4 +1,5 @@
 import auth.urls
+import admin.urls
 import index
 
 
@@ -7,4 +8,4 @@ urlpatterns = [
 ]
 
 
-urlpatterns += auth.urls.urlpatterns
+urlpatterns += auth.urls.urlpatterns + admin.urls.urlpatterns

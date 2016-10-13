@@ -1,0 +1,12 @@
+<html>
+    <head>
+		<title>后台用户列表</title>
+	</head>
+	<body>
+	   <a href='/admin/add_stuff'>增加用户</a>
+	   <a href='/admin/add_department'>增加部门</a>
+	   {% for stuff in stuff_list %}
+	       <div>{{ stuff.name }} </div></rb>
+	   {% end %}
+	</body>
+</html>

@@ -1,0 +1,18 @@
+<html>
+    <head>
+	    <title>index page</title>
+	</head>
+	<body>
+	     {% if user %}
+             <div>
+				 welcome, {{ user }}
+			 </div>
+		     <a href='/auth/myevent/'>我的页面</a>
+		 {% else %}
+		     <a href='/auth/login/'>登陆</a>
+			 <div>
+				  you have not logged in
+			 </div>
+		 {% end %}
+	</body>
+</html>

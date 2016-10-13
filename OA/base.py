@@ -6,4 +6,5 @@ class BaseHandler(RequestHandler):
         pass
 
     def get_current_user(self):
-        pass
+        user = self.get_secure_cookie('user')
+        return user

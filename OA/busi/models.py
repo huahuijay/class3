@@ -5,5 +5,9 @@ from busi import enums
 
 
 class Transaction(mongoengine.Document):
-    t_type = mongoengine.StringField(choices=enums.TRANSACTION_LIST)
+    stuff_id = mongoengine.StringField()
+    t_type = mongoengine.IntField(choices=enums.TRANSACTION_LIST)
+    content = mongoengine.StringField()
     apply_time = mongoengine.DateTimeField(default=datetime.now)
+    status = mongoengine.IntField(choices=enums.TRANSACTION_STATUS_LIST, default=enums.TRANSACTION_STATUS_CREATE)
+    operate = mongoengine.IntField(choices=enums.TRANSACTION_OPERATE_STATUS_LIST, default=enums.TRANSACTION_OPERATE_STATUS_CHECK)

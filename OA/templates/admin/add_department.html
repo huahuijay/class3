@@ -1,0 +1,13 @@
+<html>
+    <head>
+	    <title>增加部门</title>
+	</head>
+	<body>
+	    <form method='POST'>
+			{% module xsrf_form_html() %}
+			名称:<input type='text' name='name' /></br>
+			简介:<input type='text' name='summary' /></br>
+			<input type='submit' name='submit' value='增加部门' />
+		</form>
+	</body>
+</html>

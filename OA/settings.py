@@ -13,7 +13,7 @@ if PORT == 8000:
 
 settings = {
     'template_path': os.path.join(os.path.abspath('.'), 'templates'),
-    'login_url': '/login/',
+    'login_url': '/auth/login/',
     'cookie_secret': '71ce02d856e6ee36dd6ca75696257f03',
     'xsrf_cookies': True,
     'static_path': os.path.join(os.path.abspath('.'), 'static'),

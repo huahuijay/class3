@@ -3,4 +3,9 @@ from base import BaseHandler
 
 class IndexHandler(BaseHandler):
     def get(self):
-        self.write('8888')
+        user = self.get_current_user()
+        data = locals()
+        data.pop('self')
+
+        print data
+        self.render('index.html', **data)

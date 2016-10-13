@@ -1,0 +1,17 @@
+<html>
+    <head>
+	    <title>welcome register</title>
+	</head>
+	<body>
+	    <form method='POST'>
+			{% module xsrf_form_html() %}
+			内容:<input type='text' name='content' /></br>
+			类别:<select name='t_type'>
+				    {% for t_type in t_type_list %}
+					<option value='{{ t_type }}'> {{ zh_t_type_dict.get(t_type) }}</option>
+					{% end %}
+				</select></br>
+			<input type='submit' name='submit' value='提交' />
+		</form>
+	</body>
+</html>
